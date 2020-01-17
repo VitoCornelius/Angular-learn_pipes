@@ -42,4 +42,13 @@ export class AppComponent {
 
   filteredStatus = '';
 
+  onAddserver() {
+    this.servers.push({
+      instanceType: 'large',
+      name: 'Dupa Server',
+      status: 'offline',
+      started: new Date(15, 1, 2017)
+    });
+  }
+
 }
